@@ -23,12 +23,16 @@ form {
 
 fieldset {
     border: 0;
-    padding: 2rem 0;
+    padding: 2em 0;
     border-bottom: 1px solid rgb(215, 170, 30);
   }
 
   fieldset:last-of-type {
     border-bottom: none;
+  }
+
+  fieldset:first-of-type {
+    padding-top: 0;
   }
 
   input, textarea, select {
@@ -48,7 +52,7 @@ fieldset {
 
   input, textarea {
     background-color: rgb(52, 5, 5);
-    border: 1px solid rgb(85, 11, 11);
+    border: 1px solid rgb(124, 17, 17);
     color: white;
   }
 
@@ -63,9 +67,10 @@ input[type="submit"] {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: red;
-    border-color: white;
+    background-color: rgb(119, 22, 22);
+    border-color: whitesmoke;
     min-width: 300px;
+    color: rgb(215, 170, 30);
 }
 
 input[type='file']{
@@ -74,4 +79,18 @@ input[type='file']{
 
   a {
     color: red;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  input[placeholder]{
+    color: red;
+  }
+
+  select {
+    background-color: rgb(124, 17, 17);
+    color: rgb(232, 208, 137);
   }

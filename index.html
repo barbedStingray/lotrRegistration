@@ -13,9 +13,28 @@
         <fieldset>
             <label for="your-name">Your Name: <input name="your-name" id="your-name" type="text" required></label>
             <label for="your-race">Your Race: <input name="your-race" id="your-race" type="text" required></label>
+            <label for="region"> From where do you hail from?
+                <select name="region" id="region">
+                    <option value="">(select one)</option>
+                    <option value="1">Gondor</option>
+                    <option value="2">Rohan</option>
+                    <option value="3">Hobbiton</option>
+                    <option value="4">Lorien</option>
+                    <option value="5">Mirkwood</option>
+                    <option value="6">Fangorn</option>
+                    <option value="7">The Misty Mountains</option>
+                    <option value="8">The Iron Hills</option>
+                    <option value="9">Khazad-Dum</option>
+                    <option value="10">Mordor</option>
+                    <option value="11">Isengard</option>
+                    <option value="12">Khand</option>
+                    <option value="13">Harad</option>
+                    <option value="14">Angmar</option>
+                </select>
+            </label>
             <label for="your-age">Your Age: <input name="your-age" id="your-age" type="number" required></label>
             <label for="your-weapon">Your Weapon: <input name="your-weapon" id="your-weapon" type="text" required></label>
-            <label for="your-password">Speak 'Friend' and Enter: <input name="your-password" id="your-password" type="password" pattern="[a-z0-5]{3,}" required></label>
+            <label for="your-password">Speak 'Friend' and Enter: <input name="your-password" id="your-password" type="password" pattern="[a-z0-5]{3,}" placeholder="Password Please..." required></label>
         </fieldset>
 
         <fieldset>
@@ -41,8 +60,10 @@
             </label>
         </fieldset>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Begin your Quest!">
     </form>
 </body>
 </html>
+
+
 
