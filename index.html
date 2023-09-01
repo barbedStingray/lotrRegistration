@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lord of the Rings Registration</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Middle Earth!</h1>
+    <p>Please complete all required* information</p>
+    <form method="post" action="#">
+       
+        <fieldset>
+            <label for="your-name">Your Name: <input name="your-name" id="your-name" type="text" required></label>
+            <label for="your-race">Your Race: <input name="your-race" id="your-race" type="text" required></label>
+            <label for="your-age">Your Age: <input name="your-age" id="your-age" type="number" required></label>
+            <label for="your-weapon">Your Weapon: <input name="your-weapon" id="your-weapon" type="text" required></label>
+            <label for="your-password">Speak 'Friend' and Enter: <input name="your-password" id="your-password" type="password" pattern="[a-z0-5]{3,}" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="male-type"><input class="inline" id="male-type" type="radio" name="gender-type"> Option 1</label>
+            <label for="female-type"><input class="inline" id="female-type" type="radio" name="gender-type"> Option 2</label>
+            <label for="terms-and-conditions"><input class="inline" name="accept-terms" id="terms-and-conditions" type="checkbox" required> I <a href="#">accept</a></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="profile-pic">Upload a Profile Picture: <input name="profile-pic" id="profile-pic" type="file"></label>
+            <label for="age">Input your Age: <input name="age" id="age" type="number" min="18" max="999"></label>
+            <label for="referrer"> How did you hear about us?
+                <select name="referrer" id="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">family</option>
+                    <option value="2">hobbits</option>
+                    <option value="3">orcs</option>
+                    <option value="4">theOneRing</option>
+                </select>
+            </label>
+            <label for="bio">Provide a Bio:
+                <textarea name="bio" id="bio" rows="3" cols="30" placeholder="I love lord Sauron..."></textarea>
+            </label>
+        </fieldset>
+
+            <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
 
